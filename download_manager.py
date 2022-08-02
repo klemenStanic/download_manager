@@ -23,7 +23,7 @@ class Watcher:
         self.observer.schedule(event_handler, self.dir_to_watch, recursive=False)
         self.observer.start()
         while True:
-            time.sleep(60)
+            time.sleep(2)
 
         self.observer.join()
 
